@@ -1,0 +1,34 @@
+.footer {
+    background-color: $color-secondary;
+    grid-column: full-start / full-end;
+    padding: 5rem;
+
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 2.4rem;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__link:link,
+    &__link:visited {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        transition: all 0.2s;
+        padding: 1rem;
+        display: inline-block;
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: rgba($color: #fff, $alpha: 0.1);
+        transform: translateY(-3px);
+    }
+}

@@ -1,0 +1,22 @@
+@mixin respond($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
+
+.mb-sm {
+    margin-bottom: 2rem;
+}
+.mb-md {
+    margin-bottom: 4rem;
+
+    @include respond(50em) {
+        margin-bottom: 1rem;
+    }
+}
+.mb-bg {
+    margin-bottom: 6rem;
+}
+.mb-hg {
+    margin-bottom: 8rem;
+}
